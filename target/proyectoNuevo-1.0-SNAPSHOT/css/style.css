@@ -1,0 +1,23 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 5 sep. 2024, 09:42:34
+    Author     : luis
+*/
+
+
+main{
+    margin-top: 30px;
+}
+
+body{
+    background-image: url('../img/fondoEs.jpg'); 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+}
+
+
