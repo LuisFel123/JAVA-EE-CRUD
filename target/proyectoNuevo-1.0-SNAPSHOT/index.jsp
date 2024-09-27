@@ -16,7 +16,7 @@
 
     </head>
     <body>
-        
+
         <header>
 
         </header>
@@ -90,16 +90,50 @@
                     </div>
                 </form>
             </div>
-            <div class="flex justify-center mt-2 " >
+            <div class="flex justify-center mt-2" >
                 <form action="SvUsuarios" method="GET">
                     <button class="group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg">
                         Mostrar Usuarios
                     </button>
                 </form>
+
+                <form class="form ml-1" action="SvEliminar" method="POST">
+                    <button 
+                        class="group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg"
+                        type="submit"
+                        >
+                        Eliminar usuarios
+                    </button>
+                    <input
+                        class="bg-[#222630] px-4 py-3 outline-none w-[200px] text-white rounded-lg border-2 transition-colors duration-100 border-solid focus:border-[#596A95] border-[#2B3040]"
+                        name="id_usuario"
+                        placeholder="Ingrese el id "
+                        type="text"
+                        required=""
+                        />
+                </form>
+
+                <form class="form ml-1" action="SvEditar" method="GET">
+                    <button 
+                        class="group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-rose-300 hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-rose-300 relative bg-neutral-800 h-16 w-64 border text-left p-3 text-gray-50 text-base font-bold rounded-lg  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-violet-500 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-rose-300 after:right-8 after:top-3 after:rounded-full after:blur-lg"
+                        type="submit"
+                        >
+                        Editar usuario
+                    </button>
+
+                    <input
+                        class="bg-[#222630] px-4 py-3 outline-none w-[200px] text-white rounded-lg border-2 transition-colors duration-100 border-solid focus:border-[#596A95] border-[#2B3040]"
+                        name="usuarioEdit"
+                        placeholder="Ingrese el id"
+                        type="text"
+                        required=""
+                        />
+
+                </form>
             </div>
         </main>
 
         <footer></footer>
-        
+
     </body>
 </html>

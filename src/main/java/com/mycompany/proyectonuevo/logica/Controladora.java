@@ -13,13 +13,26 @@ import java.util.ArrayList;
  */
 public class Controladora {
     
-    ControladorPersistencia usuarioPer= new ControladorPersistencia();
+    ControladorPersistencia usuarioPer = new ControladorPersistencia();
     
-    public void crearUsuario(Usuario usuario){
+    public void crearUsuario(Usuario usuario) {
         usuarioPer.crearUsuario(usuario);
     }
     
-      public ArrayList<Usuario> traerUsuarios(){
+    public ArrayList<Usuario> traerUsuarios() {
         return usuarioPer.traerUsuarios();
     }
+    
+    public void eliminarUsuario(int idEliminar) {
+        usuarioPer.borrarUsuarios(idEliminar);
+    }
+    
+    public Usuario traerUsuario(int id_editar) {
+        return usuarioPer.traerUsuarioOtro(id_editar);
+    }
+
+    public void editarUsuario(Usuario usu) {
+        usuarioPer.editarUsuario(usu);
+    }
+    
 }
